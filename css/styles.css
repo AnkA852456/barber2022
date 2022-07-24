@@ -1,0 +1,365 @@
+
+
+:root {
+    --main-back-ground-color: #ffffff;
+    --header-text-main-color: #ffffff;
+    --header-text-secondaty-color: #303030;
+    --color-accent: #FF6C00;
+}
+
+/* Utilities */
+.list {
+list-style: none; 
+}
+
+.link {
+text-decoration: none
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
+body {
+font-family: "Open Sans", sans-serif;
+}
+
+/* HEADER  */
+header {
+background-color:#000000;
+}
+
+.site-nav .link {
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+color: var(--header-text-main-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--color-accent);
+}
+
+.site-nav .current {
+    color: var(--color-accent);
+}
+
+.tel-number {
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--header-text-main-color);
+}
+
+.tel-number:hover,
+.tel-number:focus {
+    color: var(--color-accent);
+}
+
+.button {
+font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: var(--header-text-main-color);
+
+background-color: inherit;
+border: 1px solid var(--color-accent);
+border-radius: 25px;
+}
+
+.button:hover {
+    background-color: var(--color-accent);
+}
+
+
+/* HERO */
+.hero {
+    background-color: black;
+}
+
+.external-sourses .link {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+color: var(--header-text-secondaty-color);
+} 
+
+.external-sourses .link:hover,
+.external-sourses .link:focus {
+    color: var(--color-accent);
+}
+
+.hero-pretitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 72px;
+line-height: 1.18;
+letter-spacing: 0.05em;
+color: var(--header-text-main-color);
+}
+
+.hero-content {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+/* ABOUT  */
+.about-pretitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--header-text-secondaty-color);
+}
+
+.about-title {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--header-text-secondaty-color);
+}
+
+.about-content {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+.about-content-next {
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+.button-secondary {
+color: var(--header-text-secondaty-color);
+}
+
+/* Price-List  */
+.prices {
+background-color: black;
+}
+
+.prices-pretitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--header-text-main-color);
+}
+
+.price-list {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+
+/* Advantages  */
+
+.advantages-item {
+font-weight: 700;
+font-size: 42px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.05em;
+color: var(--header-text-secondaty-color);
+}
+
+.advantages-item sup {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.38;
+text-align: center;
+color: var(--color-accent);
+}
+
+.advantages-item-content {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.33;
+color: var(--header-text-secondaty-color);
+}
+
+.advantages-pretitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--header-text-secondaty-color);
+}
+
+.advantages-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--header-text-secondaty-color);
+}
+
+.advantages-content {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+/* Our barbers  */
+
+.barbers-pretitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--header-text-secondaty-color);
+}
+
+.barbers-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--header-text-secondaty-color);
+}
+
+.barbers-name {
+font-size: 18px;
+line-height: 1.39;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--header-text-secondaty-color);
+}
+
+.barbers-position {
+font-size: 14px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--color-accent);
+}
+
+/* Gallery  */
+
+.gallery-title {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--header-text-secondaty-color);
+}
+
+/* Contacts  */
+
+.contacts {
+    background-color: #000000;
+}
+
+.contacts-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+color: var(--header-text-main-color);
+}
+
+.address-list {
+    font-style: normal;
+}
+
+.map {
+font-weight: 700;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+.tel,
+.mail {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+.mail {
+text-decoration-line: underline;
+}
+
+.map:hover,
+.map:focus,
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+    color: var(--color-accent);
+}
+
+.working-hours {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--header-text-main-color);
+}
+
+.time {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
