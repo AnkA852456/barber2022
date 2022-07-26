@@ -4,16 +4,23 @@
     --main-back-ground-color: #ffffff;
     --header-text-main-color: #ffffff;
     --header-text-secondaty-color: #303030;
+    --content-text-color: #9DA4BD;
+    --content-test-color-secondary: #555555;
     --color-accent: #FF6C00;
 }
 
 /* Utilities */
 .list {
 list-style: none; 
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0;
+padding: 0;
 }
 
 .link {
-text-decoration: none
+text-decoration: none;
 }
 
 .visually-hidden {
@@ -33,9 +40,65 @@ body {
 font-family: "Open Sans", sans-serif;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+    img {
+        display: block;
+    }
+
 /* HEADER  */
-header {
-background-color:#000000;
+.page-nav {
+background-color: #000000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.top-contacts .item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navigation {
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.logo {
+    margin-right: 60.75px;
 }
 
 .site-nav .link {
@@ -70,6 +133,9 @@ color: var(--header-text-main-color);
 }
 
 .button {
+display: block;
+padding: 12px 20px;
+
 font-family: inherit;
 font-weight: 600;
 font-size: 12px;
@@ -90,7 +156,15 @@ border-radius: 25px;
 
 /* HERO */
 .hero {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+
     background-color: black;
+}
+
+.hero-block {
+padding: 275px 462px 206px 100px;
 }
 
 .external-sourses .link {
@@ -106,7 +180,15 @@ color: var(--header-text-secondaty-color);
     color: var(--color-accent);
 }
 
+/* .external-sourses{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} */
+
 .hero-pretitle {
+margin-bottom: 20px;
+
 font-weight: 600;
 font-size: 11px;
 line-height: 1.33;
@@ -116,6 +198,8 @@ color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
+margin-bottom: 20px;
+
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 72px;
@@ -125,14 +209,41 @@ color: var(--header-text-main-color);
 }
 
 .hero-content {
+width: 510px;
+
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #9DA4BD;
+color: var(--content-text-color);
 }
 
 /* ABOUT  */
+.about {
+    padding-top: 130px 0px;
+    background-color: #fff;
+}
+
+.about-img {
+    display: flex;
+}
+
+.about-img .item {
+    margin-right: 30px;
+}
+.about-img .item:last-child {
+    margin-right: 64px;
+}
+
+.about-container {
+    display: flex;
+    padding: 130px 0px;
+
+}
+
+
 .about-pretitle {
+margin-bottom: 20px;
+
 font-weight: 600;
 font-size: 11px;
 line-height: 1.36;
@@ -142,6 +253,8 @@ color: var(--header-text-secondaty-color);
 }
 
 .about-title {
+margin-bottom: 20px;
+
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 42px;
@@ -151,17 +264,21 @@ color: var(--header-text-secondaty-color);
 }
 
 .about-content {
+margin-bottom: 20px;
+
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #555555;
+color: var(--content-test-color-secondary);
 }
 
 .about-content-next {
+margin-bottom: 40px;
+
 font-size: 14px;
 line-height: 1.86;
 letter-spacing: 0.02em;
-color: #555555;
+color: var(--content-test-color-secondary);
 }
 
 .button-secondary {
@@ -170,10 +287,14 @@ color: var(--header-text-secondaty-color);
 
 /* Price-List  */
 .prices {
-background-color: black;
+    padding: 130px 0px;
+    background-color: #000000;
 }
 
+
 .prices-pretitle {
+margin-bottom: 20px;
+
 font-weight: 600;
 font-size: 11px;
 line-height: 1.33;
@@ -183,6 +304,8 @@ color: rgba(157, 164, 189, 0.6);
 }
 
 .prices-title {
+margin-bottom: 44px;
+
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 42px;
@@ -192,10 +315,20 @@ color: var(--header-text-main-color);
 }
 
 .price-list {
+padding: 30px 40px;
+
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #9DA4BD;
+color: var(--content-text-color);
+}
+
+.price-list .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.price-list-uah {
+    display: flex;
 }
 
 
@@ -248,7 +381,7 @@ color: var(--header-text-secondaty-color);
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #555555;
+color: var(--content-test-color-secondary);
 }
 
 /* Our barbers  */
@@ -324,7 +457,7 @@ font-weight: 700;
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #9DA4BD;
+color: var(--content-text-color);
 }
 
 .tel,
@@ -332,7 +465,7 @@ color: #9DA4BD;
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #9DA4BD;
+color: var(--content-text-color);
 }
 
 .mail {
@@ -361,5 +494,5 @@ color: var(--header-text-main-color);
 font-size: 18px;
 line-height: 1.67;
 letter-spacing: 0.02em;
-color: #9DA4BD;
+color: var(--content-text-color);
 }
